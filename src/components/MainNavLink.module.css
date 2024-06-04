@@ -1,0 +1,22 @@
+.header {
+    max-width: 50rem;
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+}
+
+.list a {
+    text-decoration: none;
+    margin: auto 2rem;
+}
+
+.list a:hover,
+.list a.active {
+    text-decoration: underline;
+    /* background-color: plum; */
+    font-size: 20px;
+}

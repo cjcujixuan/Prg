@@ -1,0 +1,49 @@
+/* MainNavigation.css */
+
+/* 整體背景和邊框樣式 */
+header {
+    padding: 1rem;
+    background-color: #fff0f6; /* 淡粉色背景 */
+    border-bottom: 2px solid #ffccdd; /* 更深的粉色邊框 */
+}
+
+/* 導覽列樣式 */
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* 居中排列 */
+    padding: 0;
+    margin: 0;
+}
+
+/* 導覽列項目樣式 */
+.nav-list li {
+    margin: 0 2rem; /* 增加項目之間的間距 */
+}
+
+/* 導覽列連結樣式 */
+.nav-list a {
+    text-decoration: none;
+    color: #d63384; /* 深粉色文字 */
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 使用精緻字體 */
+    transition: color 0.3s ease; /* 添加顏色變化的過渡效果 */
+}
+
+/* 滑鼠懸停效果 */
+.nav-list a:hover {
+    color: #a61262; /* 更深的粉色 */
+    text-decoration: underline; /* 添加下劃線效果 */
+}
+
+/* 手機友好的響應式設計 */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin: 1rem 0;
+    }
+}
