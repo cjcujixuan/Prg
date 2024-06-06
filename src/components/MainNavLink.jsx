@@ -18,16 +18,16 @@ const MainNavLink = () => {
                         首頁</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/products"
+                    <NavLink to="/university"
                         className={({ isActive }) =>
                             isActive ? classes.active : ''}>
                         科技大學</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/products"
+                    <NavLink to="/highSchool"
                         className={({ isActive }) =>
                             isActive ? classes.active : ''}>
-                        研究所</NavLink>
+                        高中</NavLink>
                 </li>
             </ul>
         </header>

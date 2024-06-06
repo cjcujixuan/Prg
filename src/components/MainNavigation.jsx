@@ -9,7 +9,10 @@ const MainNavigation = () => {
                     <Link to="/">首頁</Link>
                 </li>
                 <li>
-                    <Link to="/products">商品</Link>
+                    <Link to="/university">科技大學</Link>
+                </li>
+                <li>
+                    <Link to="/highSchool">高中</Link>
                 </li>
             </ul>
         </header>

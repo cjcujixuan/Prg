@@ -2,10 +2,12 @@ import React from 'react';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import RouterHome from './components/RouterHome';
-import RouterProducts from './components/RouterProducts';
 import RootLayout from './components/RootLayout';
 import ErrorPage from './components/ErrorPage';
-import ProductDetail from './components/ProductDetail';
+import UniversityDetail from './components/UniversityDetail'; 
+import RouterUniversity from './components/RouterUniversity';
+import HighSchoolDetail from './components/HighSchoolDetail';
+import RouterHighSchool from './components/RouterHighSchool';
 const router = createBrowserRouter([
     {
         path: '/',
@@ -13,8 +15,10 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
         children: [
             { path: '/', element: <RouterHome /> },
-            { path: '/products', element: <RouterProducts /> },
-            { path: '/products/:productId', element: <ProductDetail /> }
+            { path: '/university', element: <RouterUniversity /> },
+            { path: '/highSchool', element: <RouterHighSchool /> },
+            { path: '/university/:universityId', element: <UniversityDetail /> },
+            { path: '/highSchool/:highSchoolId', element: <HighSchoolDetail /> }
         ]
     }
 ]);
@@ -23,8 +27,8 @@ function App() {
         <div className="App">
             <RouterProvider router={router} />
             {/* react-router-dom 套件 裡面的 元件'RouterProvider'
-            並沒有實際寫到它的程式碼 */}
-            {/* 指引到對應的頁面的元件是RouterProvider，它的屬性是router={} */}
+            並沒有實際寫到它的程式碼 /}
+            {/ 指引到對應的頁面的元件是RouterProvider，它的屬性是router={} */}
         </div>
     );
 }

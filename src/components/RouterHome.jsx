@@ -3,7 +3,7 @@ const RouterHome= () => {
     return(
         <div>
             <h1>Home Page</h1>
-            <h2>切換至 <Link to="/products">Products</Link></h2>
+            <h2>切換至 <Link to="/university">科技大學</Link></h2>
         </div>
     );
     
