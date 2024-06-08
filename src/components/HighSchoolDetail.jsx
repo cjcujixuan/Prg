@@ -10,8 +10,7 @@ const HighSchoolDetail = () => {
     return (
         <div>
         <h1>高中詳細信息</h1>
-        <p>高中名稱: {`${highSchoolId}`}</p>
-        <p>地址: {`${highSchoolId.address}`}</p>
+        <p>高中名稱: {highSchoolId}</p>
 
     </div>
     );

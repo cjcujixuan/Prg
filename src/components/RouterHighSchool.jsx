@@ -48,7 +48,7 @@ const RouterHighSchool = () => {
                 {highSchools.length > 0 ? (
                     highSchools.map((highSchool, index) => (
                         <li key={index} className={classes.item}>
-                            <Link to={`/highSchool/${highSchool.id}`}>
+                            <Link to={`/highSchool/${highSchool.name}`}>
                                 {highSchool.name} - {highSchool.country} - {highSchool.city}
                             </Link>
                         </li>
