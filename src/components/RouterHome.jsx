@@ -7,7 +7,7 @@ const RouterHome = () => {
     const results = useLoaderData();
     // const results2 = useLoaderData();
     return (
-        <ResultsList results={results} />,
+
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <h3><Link to="/university">大學資訊頁面</Link></h3>
               <h2>世界大學各國占比</h2>
@@ -24,6 +24,7 @@ const RouterHome = () => {
                   </div>
               </div>
           </div>
+                  ,<ResultsList results={results} />
       );
     // return <ResultsList2 results2={results2} />;
 }
