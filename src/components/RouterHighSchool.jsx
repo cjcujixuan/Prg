@@ -33,6 +33,15 @@ const RouterHighSchool = () => {
 
     return (
         <div>
+
+            <h1>高中列表</h1>
+            <iframe title="US Public Schools Table" src="https://public.opendatasoft.com/explore/embed/dataset/us-public-schools/table/?refine.level=HIGH&dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InVzLXB1YmxpYy1zY2hvb2xzIiwib3B0aW9ucyI6eyJyZWZpbmUubGV2ZWwiOiJISUdIIn19LCJjaGFydHMiOlt7ImFsaWduTW9udGgiOnRydWUsInR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiQ09VTlQiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjRkY1MTVBIn1dLCJ4QXhpcyI6ImNpdHkiLCJtYXhwb2ludHMiOjUwLCJzb3J0IjoiIn1dLCJ0aW1lc2NhbGUiOiIiLCJkaXNwbGF5TGVnZW5kIjp0cnVlLCJhbGlnbk1vbnRoIjp0cnVlfQ%3D%3D&location=6,-32.63629,-49.40185&basemap=jawg.light&static=false&datasetcard=false"
+                width="100%" height="400" frameborder="0"></iframe>
+
+            <h2>高中區域分布</h2>
+            <iframe title="US Public Schools Map" src="https://public.opendatasoft.com/explore/embed/dataset/us-public-schools/map/?refine.level=HIGH&dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InVzLXB1YmxpYy1zY2hvb2xzIiwib3B0aW9ucyI6eyJyZWZpbmUubGV2ZWwiOiJISUdIIn19LCJjaGFydHMiOlt7ImFsaWduTW9udGgiOnRydWUsInR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiQ09VTlQiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiIjRkY1MTVBIn1dLCJ4QXhpcyI6ImNpdHkiLCJtYXhwb2ludHMiOjUwLCJzb3J0IjoiIn1dLCJ0aW1lc2NhbGUiOiIiLCJkaXNwbGF5TGVnZW5kIjp0cnVlLCJhbGlnbk1vbnRoIjp0cnVlfQ%3D%3D&location=2,39.77032,10.46182&basemap=jawg.light&static=false&datasetcard=false&scrollWheelZoom=true"
+                width="100%" height="400" frameborder="0"></iframe>
+
             <h1>高中資訊列表</h1>
             {error && <p>{error}</p>}
             <ul className={classes.grid}>

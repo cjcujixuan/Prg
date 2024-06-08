@@ -39,6 +39,21 @@ const RouterUniversity = () => {
 
     return (
         <div>
+
+<h1>大學排名表</h1>
+<iframe
+  title="Shanghai World University Ranking Table"
+  src="https://public.opendatasoft.com/explore/embed/dataset/shanghai-world-university-ranking/table/?sort=world_rank&refine.year=2018&static=false&datasetcard=false"
+  width="100%" height="400" frameborder="0"
+></iframe>
+
+<h2>大學區域分布</h2>
+<iframe
+  title="Shanghai World University Ranking Map"
+  src="https://public.opendatasoft.com/explore/embed/dataset/shanghai-world-university-ranking/map/?sort=world_rank&refine.year=2018&location=2,56.36525,4.21875&basemap=jawg.light&static=false&datasetcard=false&scrollWheelZoom=false"
+  width="100%" height="400" frameborder="0"
+></iframe>
+
             <h1>大學排名前100名</h1>
             {loading ? ( // 如果在加載中顯示載入動畫
                 <div>Loading...</div>
